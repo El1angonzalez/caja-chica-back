@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* === Estructura === */
+    "rootDir": "./src",
+    "outDir": "./dist",
+    /* === Target / Runtime === */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    /* === Debug === */
+    "sourceMap": true,
+    /* === Validación estricta recomendada SRI === */
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    /* === Rendimiento === */
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
