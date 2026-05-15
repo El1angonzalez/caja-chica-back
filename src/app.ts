@@ -15,12 +15,13 @@ import prestamoRoutes from "./routes/prestamo.routes";
 const app: Application = express();
 
 const corsOptions: CorsOptions = {
-  origin: '*',
+  origin: ["http://localhost:5173"],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials: true
 };
 
-app.use(cors({ exposedHeaders: ["Content-Disposition"] }));
+app.use(cors(corsOptions));
+
 app.use(cors(corsOptions));
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: true, limit: '20mb' }));
